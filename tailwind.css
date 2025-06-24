@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Global Colors - Dark Theme (default) */
+    --global-bg-1: #161b21;
+    --global-bg-2: #1d232c;
+    --global-bg-3: #319dff;
+    --global-bg-4: #3b4758;
+    --global-bg-5: #7d8fa9;
+    --global-text-1: #319dff;
+    --global-text-2: #7d8fa9;
+    --global-text-3: #7dc1ff;
+    --global-text-4: #dde1e8;
+    --global-text-5: #eef0f4;
+    --global-text-6: #586a84;
+
+    /* Sidebar Colors */
+    --sidebar-bg-1: #0077e4;
+    --sidebar-text-1: #586a84;
+    --sidebar-text-2: #ffffff;
+
+    /* Header Colors */
+    --header-bg-1: #f21672;
+
+    /* SearchView Colors */
+    --searchview-text-1: #bac4d1;
+
+    /* Table Colors */
+    --table-text-1: #10d096;
+    --table-text-2: #ff316a;
+  }
+
+  [data-theme="light"] {
+    /* Global Colors - Light Theme */
+    --global-bg-1: #ffffff;
+    --global-bg-2: #f8f9fa;
+    --global-bg-3: #319dff;
+    --global-bg-4: #e9ecef;
+    --global-bg-5: #6c757d;
+    --global-text-1: #319dff;
+    --global-text-2: #6c757d;
+    --global-text-3: #0056b3;
+    --global-text-4: #495057;
+    --global-text-5: #212529;
+    --global-text-6: #868e96;
+
+    /* Sidebar Colors */
+    --sidebar-bg-1: #0077e4;
+    --sidebar-text-1: #6c757d;
+    --sidebar-text-2: #ffffff;
+
+    /* Header Colors */
+    --header-bg-1: #f21672;
+
+    /* SearchView Colors */
+    --searchview-text-1: #6c757d;
+
+    /* Table Colors */
+    --table-text-1: #10d096;
+    --table-text-2: #ff316a;
+  }
+}
+
+@layer utilities {
+  /* Global */
+  .bg-global-1 {
+    background-color: var(--global-bg-1);
+  }
+  .bg-global-2 {
+    background-color: var(--global-bg-2);
+  }
+  .bg-global-3 {
+    background-color: var(--global-bg-3);
+  }
+  .bg-global-4 {
+    background-color: var(--global-bg-4);
+  }
+  .bg-global-5 {
+    background-color: var(--global-bg-5);
+  }
+  .text-global-1 {
+    color: var(--global-text-1);
+  }
+  .text-global-2 {
+    color: var(--global-text-2);
+  }
+  .text-global-3 {
+    color: var(--global-text-3);
+  }
+  .text-global-4 {
+    color: var(--global-text-4);
+  }
+  .text-global-5 {
+    color: var(--global-text-5);
+  }
+  .text-global-6 {
+    color: var(--global-text-6);
+  }
+
+  /* Sidebar */
+  .bg-sidebar-1 {
+    background-color: var(--sidebar-bg-1);
+  }
+  .text-sidebar-1 {
+    color: var(--sidebar-text-1);
+  }
+  .text-sidebar-2 {
+    color: var(--sidebar-text-2);
+  }
+
+  /* Header */
+  .bg-header-1 {
+    background-color: var(--header-bg-1);
+  }
+
+  /* SearchView */
+  .text-searchview-1 {
+    color: var(--searchview-text-1);
+  }
+
+  /* Table */
+  .text-table-1 {
+    color: var(--table-text-1);
+  }
+  .text-table-2 {
+    color: var(--table-text-2);
+  }
+}
